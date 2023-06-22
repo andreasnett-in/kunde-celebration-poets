@@ -1,4 +1,4 @@
-const requiredProperties = ["name", "greeting"];
+const requiredProperties = ["name", "greeting", "quote", "quoteBy"];
 
 function validate(body) {
   let missingProperties = [];
