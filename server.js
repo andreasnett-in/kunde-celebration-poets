@@ -31,7 +31,7 @@ const months = [
 app.post("/v1/birthday", (req, res) => {
   const data = { ...req.body };
   var now = new Date();
-  data["date"] = `${now.getDay()}. ${
+  data["date"] = `${now.getDate()}. ${
     months[now.getMonth()] || now.getMonth()
   } ${now.getFullYear()}`;
   const base = __dirname + "/assets";
